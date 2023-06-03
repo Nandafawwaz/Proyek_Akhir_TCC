@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json())
@@ -12,6 +12,7 @@ let dbConfig = {
   client: "mysql",
   connection: {
     user: "root",
+    host: "34.143.242.36",
     password: "",
     database: "gae-demo-db",
   },
